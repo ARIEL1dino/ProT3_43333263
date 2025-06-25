@@ -1,0 +1,55 @@
+
+
+
+/* Estilo para imágenes */
+.logo_perro {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    border: 3px solid #69bd45;
+    border-radius: 100px;
+}/* le doy un color suave  al nav por las limitaciones de bootstrap*/
+.navbar {
+        background-color: #fcecce; 
+      }
+      /* Redimenciono el carrusel */
+.carousel img {
+        height: 50vh; 
+        object-fit: cover;
+      }
+
+      .category-card {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+      }
+
+      .sabias-que {
+        position: relative;
+        background-color: #f7f1e5;
+        padding: 15px;
+        border-left: 5px solid #e91e63;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+
+      .sabias-que img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-right: 15px;
+      }
+
+      .sabias-que-header {
+        position: absolute;
+        top: -20px;
+        left: -15px;
+        background-color: #e91e63;
+        color: white;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+
+
