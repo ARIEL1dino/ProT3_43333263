@@ -12,14 +12,15 @@
               <?php if(session()->getFlashdata('msg')):?>
                     <div class="alert alert-warning"><?=session()->getFlashdata('msg');?></div>
                     <?php endif?>
-              <form method='post' action="<?php echo base_url('/enviar-login')?>">
+              
+                <form method='POST' action="<?php echo base_url('/enviarLogin')?>">
                 <div class="mb-3">
                   <label for="correo" class="form-label">Correo</label>
-                  <input type="email" class="form-control" id="correo" placeholder="Correo">
+                  <input name='correo' type="email" class="form-control" id="correo" placeholder="Correo">
                 </div>
                 <div class="mb-3">
                   <label for="password" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="contraseña">
+                  <input name='contraseña' type="password" class="form-control" id="password" placeholder="contraseña">
                 </div>
                 <div class="d-flex justify-content-between">
                   <button type="submit" class="btn btn-success">Ingresar</button>

@@ -16,17 +16,17 @@ class login_controller extends BaseController{
         echo view('fronts/footer_view');
     }
 
-    public function auth()
+    public function auth()//Funcion autorizar
     {
         $session = session();
         $model = new usuario_model();
 
         //traemos los datos del fomrulario
-        $correo = this->request->getVar('correo');
-        $pass = this->request->getVar('contraseña');
+        $correo = $this->request->getVar('correo');
+        $pass = $this->request->getVar('contraseña');
 
         $data = $model->where('correo', $correo)->first();
-        id($data){
+        if($data){
             $contraseña = $data['contraseña'];
             $ba = $data['baja'];
             if($ba == 'SI'){
@@ -51,11 +51,11 @@ class login_controller extends BaseController{
 
             }else{
                 session()->setFlashdata('msg', 'Contraseña Incorrecta');
-                return redirect()->to('/login_controller');
+                return redirect()->to('/login');
             }
         }else{
             session()->setFlashdata('msg', 'No existe el correo o es incorrecto');
-                return redirect()->to('/login_controller');
+                return redirect()->to('/login');
         }
 
     }
