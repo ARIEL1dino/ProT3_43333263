@@ -21,5 +21,5 @@ $routes->get('/login', 'usuario_controller::login');
 /*Rutas del LOGIN*/
 $routes->get('/login', 'login_controller');
 $routes->post('/enviarLogin', 'login_controller::auth');
-$routes->get('/panel', 'panel_controller::index', ['filter' => 'auth']);
+$routes->get('/panel', 'panel_controller::index', ['filters' => 'auth']);
 $routes->get('/logout', 'login_controller::logout');
