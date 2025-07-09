@@ -1,0 +1,5 @@
+COntraseñas para administrador::	Usuario    | ariele@gmail.com
+					Contraseña | 123456
+
+Contraseña para cliente:: 		Usuario    | marti@gmail.com
+					Contraseña | 123456
